@@ -98,7 +98,7 @@ export default function GamesTab() {
           Games & Pixel Art
         </h3>
         <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-          I am an hobbyist game developer and pixel artist. I mainly use Unity, and have partecipated in game jams such as Ludum Dare and GMTK. Below are my projects. Click to play them directly in your web browser!
+          Some of my games.  Click to play them directly in your web browser! 
         </p>
       </div>
 

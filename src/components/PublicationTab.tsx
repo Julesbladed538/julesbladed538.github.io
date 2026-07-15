@@ -31,7 +31,7 @@ export default function PublicationTab() {
           Academic Publications & Research Works
         </h3>
         <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-          My academic research is geared toward utilizing statistical machine learning models to analyze, predict, and automate software refactoring. Below is my co-authored paper published at the premier conference for software evolution and reengineering.
+          The paper published with my supervisors, a refinement over my Bachelor's thesis.
         </p>
       </div>
 

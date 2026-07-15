@@ -109,7 +109,7 @@ export default function ProjectsTab() {
           Projects
         </h3>
         <p className="text-sm text-slate-500 mt-2 leading-relaxed">
-          A collection of my academic tools, framework experiments, and AI systems built during my B.Sc. and M.Sc. studies at the University of Pisa.</p>
+          A collection of my tools, experiments, and AI systems built during my B.Sc. and M.Sc. studies at the University of Pisa.</p>
       </div>
 
       {/* Filters Bar */}
