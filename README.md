@@ -2,7 +2,7 @@
 
 A highly polished, responsive, and academic-themed portfolio built for **Bartolomeo Zisa**, Master's Student in Artificial Intelligence at the University of Pisa and hobbyist game developer.
 
-Live at ttps://BartolomeoZisa.github.io/
+Live at https://BartolomeoZisa.github.io/
 
 ## Key Features
 - **Modern Responsive Design**: Academic-inspired warm Slate and Teal accents matching the requested aesthetic.
