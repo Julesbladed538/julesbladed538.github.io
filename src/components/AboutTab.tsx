@@ -11,7 +11,6 @@ import {
   Tv, 
   ExternalLink,
   Briefcase,
-  Cpu,
   Award
 } from 'lucide-react';
 
@@ -21,7 +20,8 @@ const getIcon = (name: string) => {
     case 'LinkedIn':
       return <Linkedin className="w-5 h-5" />;
     case 'GitHub':
-      return <Github className="w-5 h-5" />;
+      // fill-current ensures the logo remains solid and takes on the text color
+      return <Github className="w-5 h-5 fill-current" />;
     case 'Instagram':
       return <Instagram className="w-5 h-5" />;
     case 'Itch.io':
@@ -62,9 +62,6 @@ export default function AboutTab() {
                   />
                 </div>
               </div>
-              <span className="absolute bottom-2 right-2 bg-teal-600 text-white p-1.5 rounded-full shadow-lg border-2 border-white">
-                <Cpu className="w-4 h-4 animate-pulse" />
-              </span>
             </div>
 
             <div>
@@ -108,19 +105,27 @@ export default function AboutTab() {
             Links
           </h3>
           <div className="grid grid-cols-2 gap-3" id="links-grid">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-2.5 px-4 py-3 border rounded-xl text-sm font-medium transition-all duration-300 ${link.colorClass}`}
-                id={`link-btn-${link.name.toLowerCase()}`}
-              >
-                {getIcon(link.name)}
-                <span>{link.name}</span>
-              </a>
-            ))}
+            {socialLinks.map((link) => {
+              // GitHub defaults to clear/white, but on hover/select turns deep slate with white text for maximum contrast
+              const isGithub = link.name === 'GitHub';
+              const linkClasses = isGithub
+                ? 'bg-white text-slate-800 border-slate-200 hover:bg-slate-900 hover:border-slate-900 hover:text-white'
+                : link.colorClass || 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50';
+
+              return (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-2.5 px-4 py-3 border rounded-xl text-sm font-medium transition-all duration-300 ${linkClasses}`}
+                  id={`link-btn-${link.name.toLowerCase()}`}
+                >
+                  {getIcon(link.name)}
+                  <span>{link.name}</span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
